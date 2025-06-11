@@ -7,4 +7,6 @@ module com.example.labprofessoroak {
 
     opens com.example.labprofessoroak to javafx.fxml;
     exports com.example.labprofessoroak;
+    exports com.example.labprofessoroak.controller;
+    opens com.example.labprofessoroak.controller to javafx.fxml;
 }

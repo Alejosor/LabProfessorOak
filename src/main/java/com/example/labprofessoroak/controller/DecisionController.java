@@ -1,9 +1,9 @@
-package com.example.labprofessoroak;
+package com.example.labprofessoroak.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class DecisionController {
     @FXML
     private Label welcomeText;
 
