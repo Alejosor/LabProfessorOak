@@ -4,6 +4,8 @@ module com.example.labprofessoroak {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires com.fasterxml.jackson.databind;
+    requires java.net.http;
 
     opens com.example.labprofessoroak to javafx.fxml;
     exports com.example.labprofessoroak;

@@ -1,0 +1,190 @@
+{
+    "startQuestionId": "q1",
+    "questions": {
+      "q1": {
+        "questionText": "¿Qué tipo de Pokémon te llama más la atención?",
+        "options": [
+          {"text": "Fuego", "nextQuestionId": "q2_fuego"},
+          {"text": "Agua", "nextQuestionId": "q2_agua"},
+          {"text": "Planta", "nextQuestionId": "q2_planta"},
+          {"text": "Eléctrico", "nextQuestionId": "q2_electrico"},
+          {"text": "Psíquico", "nextQuestionId": "q2_psiquico"},
+          {"text": "Dragón", "nextQuestionId": "q2_dragon"}
+        ]
+      },
+      "q2_fuego": {
+        "questionText": "¿Qué estilo de combate prefieres?",
+        "options": [
+          {"text": "Ataques rápidos y directos", "nextQuestionId": "q3_fuego_rapido"},
+          {"text": "Poder bruto y devastador", "nextQuestionId": "q3_fuego_poder"},
+          {"text": "Equilibrio entre ataque y defensa", "nextQuestionId": "q3_fuego_equilibrio"}
+        ]
+      },
+      "q2_agua": {
+        "questionText": "¿Dónde te imaginas viviendo con tu Pokémon?",
+        "options": [
+          {"text": "En la playa o cerca del mar", "nextQuestionId": "q3_agua_mar"},
+          {"text": "En un lago tranquilo", "nextQuestionId": "q3_agua_lago"},
+          {"text": "En una ciudad moderna", "nextQuestionId": "q3_agua_ciudad"}
+        ]
+      },
+      "q2_planta": {
+        "questionText": "¿Qué rol prefieres que tenga tu Pokémon?",
+        "options": [
+          {"text": "Curandero y soporte", "nextQuestionId": "q3_planta_soporte"},
+          {"text": "Tanque defensivo", "nextQuestionId": "q3_planta_tanque"},
+          {"text": "Atacante venenoso", "nextQuestionId": "q3_planta_veneno"}
+        ]
+      },
+      "q2_electrico": {
+        "questionText": "¿Qué nivel de energía buscas en tu compañero?",
+        "options": [
+          {"text": "Súper energético y juguetón", "nextQuestionId": "q3_electrico_energetico"},
+          {"text": "Poderoso y majestuoso", "nextQuestionId": "q3_electrico_majestuoso"},
+          {"text": "Inteligente y estratégico", "nextQuestionId": "q3_electrico_estrategico"}
+        ]
+      },
+      "q2_psiquico": {
+        "questionText": "¿Qué habilidad psíquica te parece más fascinante?",
+        "options": [
+          {"text": "Telepatía y conexión mental", "nextQuestionId": "q3_psiquico_telepata"},
+          {"text": "Telequinesis y manipulación", "nextQuestionId": "q3_psiquico_telequinesis"},
+          {"text": "Predicción del futuro", "nextQuestionId": "q3_psiquico_futuro"}
+        ]
+      },
+      "q2_dragon": {
+        "questionText": "¿Qué cualidad valoras más en un dragón?",
+        "options": [
+          {"text": "Fiereza y poder intimidante", "nextQuestionId": "q3_dragon_feroz"},
+          {"text": "Sabiduría ancestral", "nextQuestionId": "q3_dragon_sabio"},
+          {"text": "Lealtad y nobleza", "nextQuestionId": "q3_dragon_noble"}
+        ]
+      },
+      "q3_fuego_rapido": {
+        "questionText": "¿Prefieres un Pokémon pequeño y ágil o mediano y versátil?",
+        "options": [
+          {"text": "Pequeño y ágil", "pokemonResult": "charmander"},
+          {"text": "Mediano y versátil", "pokemonResult": "growlithe"}
+        ]
+      },
+      "q3_fuego_poder": {
+        "questionText": "¿Te gustan los Pokémon legendarios?",
+        "options": [
+          {"text": "Sí, me fascinan", "pokemonResult": "moltres"},
+          {"text": "Prefiero uno más común", "pokemonResult": "arcanine"}
+        ]
+      },
+      "q3_fuego_equilibrio": {
+        "questionText": "¿Prefieres apariencia más feroz o más amigable?",
+        "options": [
+          {"text": "Feroz e intimidante", "pokemonResult": "rapidash"},
+          {"text": "Amigable y cálido", "pokemonResult": "ninetales"}
+        ]
+      },
+      "q3_agua_mar": {
+        "questionText": "¿Te gustan más los Pokémon grandes o medianos?",
+        "options": [
+          {"text": "Grandes y majestuosos", "pokemonResult": "lapras"},
+          {"text": "Medianos y ágiles", "pokemonResult": "starmie"}
+        ]
+      },
+      "q3_agua_lago": {
+        "questionText": "¿Prefieres un compañero tranquilo o juguetón?",
+        "options": [
+          {"text": "Tranquilo y sereno", "pokemonResult": "slowpoke"},
+          {"text": "Juguetón y activo", "pokemonResult": "squirtle"}
+        ]
+      },
+      "q3_agua_ciudad": {
+        "questionText": "¿Qué tamaño prefieres para la vida urbana?",
+        "options": [
+          {"text": "Compacto y práctico", "pokemonResult": "psyduck"},
+          {"text": "Imponente pero manejable", "pokemonResult": "blastoise"}
+        ]
+      },
+      "q3_planta_soporte": {
+        "questionText": "¿Prefieres un sanador puro o uno que también pueda atacar?",
+        "options": [
+          {"text": "Sanador especializado", "pokemonResult": "bulbasaur"},
+          {"text": "Híbrido curación-ataque", "pokemonResult": "oddish"}
+        ]
+      },
+      "q3_planta_tanque": {
+        "questionText": "¿Qué tipo de defensa prefieres?",
+        "options": [
+          {"text": "Defensa física sólida", "pokemonResult": "venusaur"},
+          {"text": "Regeneración constante", "pokemonResult": "tangela"}
+        ]
+      },
+      "q3_planta_veneno": {
+        "questionText": "¿Prefieres efectos de veneno o parálisis?",
+        "options": [
+          {"text": "Veneno persistente", "pokemonResult": "vileplume"},
+          {"text": "Parálisis y control", "pokemonResult": "victreebel"}
+        ]
+      },
+      "q3_electrico_energetico": {
+        "questionText": "¿Qué tamaño prefieres para un compañero tan activo?",
+        "options": [
+          {"text": "Pequeño y adorable", "pokemonResult": "pichu"},
+          {"text": "Mediano y expresivo", "pokemonResult": "pikachu"}
+        ]
+      },
+      "q3_electrico_majestuoso": {
+        "questionText": "¿Prefieres poder terrenal o celestial?",
+        "options": [
+          {"text": "Poder terrenal y rugidos", "pokemonResult": "raichu"},
+          {"text": "Poder celestial y rayos", "pokemonResult": "zapdos"}
+        ]
+      },
+      "q3_electrico_estrategico": {
+        "questionText": "¿Qué tipo de estrategia prefieres?",
+        "options": [
+          {"text": "Velocidad y precisión", "pokemonResult": "jolteon"},
+          {"text": "Magnetismo y control", "pokemonResult": "magnezone"}
+        ]
+      },
+      "q3_psiquico_telepata": {
+        "questionText": "¿Prefieres conexión emocional o mental pura?",
+        "options": [
+          {"text": "Conexión emocional profunda", "pokemonResult": "abra"},
+          {"text": "Comunicación mental avanzada", "pokemonResult": "mewtwo"}
+        ]
+      },
+      "q3_psiquico_telequinesis": {
+        "questionText": "¿Qué prefieres mover con la mente?",
+        "options": [
+          {"text": "Objetos pequeños con precisión", "pokemonResult": "alakazam"},
+          {"text": "Grandes masas con poder", "pokemonResult": "metagross"}
+        ]
+      },
+      "q3_psiquico_futuro": {
+        "questionText": "¿Prefieres conocer el futuro cercano o lejano?",
+        "options": [
+          {"text": "Futuro inmediato para batallas", "pokemonResult": "espeon"},
+          {"text": "Visiones del destino", "pokemonResult": "xatu"}
+        ]
+      },
+      "q3_dragon_feroz": {
+        "questionText": "¿Qué tipo de ferocidad prefieres?",
+        "options": [
+          {"text": "Furia descontrolada", "pokemonResult": "gyarados"},
+          {"text": "Poder controlado y letal", "pokemonResult": "dragonite"}
+        ]
+      },
+      "q3_dragon_sabio": {
+        "questionText": "¿Prefieres sabiduría antigua o conocimiento moderno?",
+        "options": [
+          {"text": "Sabiduría de eras pasadas", "pokemonResult": "dratini"},
+          {"text": "Conocimiento evolutivo", "pokemonResult": "flygon"}
+        ]
+      },
+      "q3_dragon_noble": {
+        "questionText": "¿Qué tipo de nobleza buscas?",
+        "options": [
+          {"text": "Nobleza real y majestuosa", "pokemonResult": "kingdra"},
+          {"text": "Nobleza guerrera y honorable", "pokemonResult": "garchomp"}
+        ]
+      }
+    }
+  }

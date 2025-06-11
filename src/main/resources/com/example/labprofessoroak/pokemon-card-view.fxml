@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.labprofessoroak.controller.PokemonCardController"
+      style="-fx-background-color: linear-gradient(to bottom, #f8f9fa, #e9ecef); 
+             -fx-padding: 40; 
+             -fx-border-color: #d3d3d3; 
+             -fx-border-radius: 25; 
+             -fx-border-width: 2; 
+             -fx-background-radius: 25; 
+             -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 0, 5);">
+
+    <padding>
+        <Insets bottom="35.0" left="35.0" right="35.0" top="35.0"/>
+    </padding>
+
+    <!-- Nombre del Pokémon más destacado -->
+    <Label fx:id="pokemonNameLabel"
+           style="-fx-font-size: 44px; 
+                  -fx-font-weight: bold; 
+                  -fx-text-fill: #4B0082; 
+                  -fx-padding: 10 0 20 0;
+                  -fx-effect: dropshadow(gaussian, rgba(75,0,130,0.2), 0, 3, 3, 0;">
+    </Label>
+
+    <!-- Imagen mucho más grande (300x300) -->
+    <ImageView fx:id="pokemonImageView" fitHeight="300" fitWidth="300" preserveRatio="true"
+               style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0.3, 0, 3);"/>
+
+    <!-- Sección de atributos con textos más grandes -->
+    <GridPane hgap="20" vgap="15" alignment="CENTER" style="-fx-padding: 20;">
+        <padding>
+            <Insets top="15.0" bottom="15.0" left="20.0" right="20.0"/>
+        </padding>
+
+        <!-- Todos los textos de atributos ampliados -->
+        <Label text="Tipo(s):" 
+               style="-fx-font-weight: bold; 
+                      -fx-text-fill: #2E8B57; 
+                      -fx-font-size: 22px;" 
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="pokemonTypesLabel" 
+               style="-fx-font-size: 22px; 
+                      -fx-text-fill: #3CB371; 
+                      -fx-font-weight: 500;" 
+               GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Habilidades:" 
+               style="-fx-font-weight: bold; 
+                      -fx-text-fill: #2E8B57; 
+                      -fx-font-size: 22px;" 
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="pokemonAbilitiesLabel" 
+               style="-fx-font-size: 22px; 
+                      -fx-text-fill: #3CB371; 
+                      -fx-font-weight: 500;" 
+               GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Peso:" 
+               style="-fx-font-weight: bold; 
+                      -fx-text-fill: #2E8B57; 
+                      -fx-font-size: 22px;" 
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Label fx:id="pokemonWeightLabel" 
+               style="-fx-font-size: 22px; 
+                      -fx-text-fill: #3CB371; 
+                      -fx-font-weight: 500;" 
+               GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Altura:" 
+               style="-fx-font-weight: bold; 
+                      -fx-text-fill: #2E8B57; 
+                      -fx-font-size: 22px;" 
+               GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Label fx:id="pokemonHeightLabel" 
+               style="-fx-font-size: 22px; 
+                      -fx-text-fill: #3CB371; 
+                      -fx-font-weight: 500;" 
+               GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <!-- Botones también más grandes para mantener proporción -->
+    <HBox spacing="25" alignment="CENTER" style="-fx-padding: 20 0 0 0;">
+        <Button text="Volver a empezar" onAction="#handleRestartButtonAction"
+                style="-fx-background-color: #28A745; 
+                       -fx-text-fill: white; 
+                       -fx-font-size: 20px; 
+                       -fx-font-weight: bold; 
+                       -fx-padding: 12 35; 
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;">
+        </Button>
+        <Button text="Cerrar" onAction="#handleCloseButtonAction"
+                style="-fx-background-color: #DC3545; 
+                       -fx-text-fill: white; 
+                       -fx-font-size: 20px; 
+                       -fx-font-weight: bold; 
+                       -fx-padding: 12 35; 
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;">
+        </Button>
+    </HBox>
+</VBox>

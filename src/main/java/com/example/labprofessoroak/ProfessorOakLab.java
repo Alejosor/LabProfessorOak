@@ -10,6 +10,8 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 
 public class ProfessorOakLab extends Application {
 
@@ -53,9 +55,15 @@ public class ProfessorOakLab extends Application {
         Button yesButton = new Button("Si");
         yesButton.setStyle("-fx-background-color: #ADD8E6; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10 20; -fx-background-radius: 5;"); // Color pastel azul claro
         yesButton.setOnAction(e -> {
-            // Lógica para cuando se elige "Si" (comenzar preguntas)
-            System.out.println("Comenzar con las preguntas...");
-            // Aquí iría la llamada a la siguiente pantalla de preguntas
+            try {
+                Parent decisionView = FXMLLoader.load(getClass().getResource("/com/example/labprofessoroak/decision-view.fxml"));
+                Scene decisionScene = new Scene(decisionView, 1200, 800);
+                primaryStage.setScene(decisionScene);
+                primaryStage.setTitle("Árbol de Decisiones Pokémon");
+            } catch (Exception ex) {
+                System.err.println("Error al cargar la vista de decisiones: " + ex.getMessage());
+                ex.printStackTrace();
+            }
         });
 
         Button noButton = new Button("No");
@@ -80,7 +88,7 @@ public class ProfessorOakLab extends Application {
         }
         introLayout.getChildren().addAll(questionLabel, buttonBox);
 
-        Scene introScene = new Scene(introLayout, 600, 450);
+        Scene introScene = new Scene(introLayout, 1200, 800);
         primaryStage.setScene(introScene);
         primaryStage.show();
     }
@@ -127,7 +135,7 @@ public class ProfessorOakLab extends Application {
         }
         farewellLayout.getChildren().add(willReturnButton);
 
-        Scene farewellScene = new Scene(farewellLayout, 600, 450);
+        Scene farewellScene = new Scene(farewellLayout, 1200, 800);
         primaryStage.setScene(farewellScene);
     }
 

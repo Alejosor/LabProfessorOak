@@ -3,14 +3,23 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.labprofessoroak.controller.DecisionController">
+      fx:controller="com.example.labprofessoroak.controller.DecisionController"
+      style="-fx-background-color: #F8F8FF; -fx-padding: 20;">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="questionLabel" textAlignment="CENTER" wrapText="true" 
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #6A5ACD;">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Label>
+
+    <VBox fx:id="optionsContainer" alignment="CENTER" spacing="10.0">
+        <!-- Los botones se añadirán aquí dinámicamente desde el controlador -->
+    </VBox>
 </VBox>
