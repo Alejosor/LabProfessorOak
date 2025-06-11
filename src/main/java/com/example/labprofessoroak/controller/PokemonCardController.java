@@ -120,12 +120,12 @@ public class PokemonCardController {
     @FXML
     private void handleRestartButtonAction() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/labprofessoroak/ProfessorOakLab.fxml")); // Asumiendo que ProfessorOakLab.fxml es el inicio
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/labprofessoroak/decision-view.fxml"));
             Parent root = loader.load();
-            Scene scene = new Scene(root, 600, 450);
+            Scene scene = new Scene(root, 1200, 800);
             Stage stage = (Stage) pokemonNameLabel.getScene().getWindow();
             stage.setScene(scene);
-            stage.setTitle("Laboratorio del Profesor Oak");
+            stage.setTitle("Árbol de Decisiones Pokémon");
         } catch (Exception e) {
             System.err.println("Error al volver a la pantalla de inicio: " + e.getMessage());
             e.printStackTrace();
