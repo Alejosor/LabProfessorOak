@@ -25,12 +25,14 @@
 
     <!-- Nombre del Pokémon más destacado -->
     <Label fx:id="pokemonNameLabel"
-           style="-fx-font-size: 44px; 
-                  -fx-font-weight: bold; 
-                  -fx-text-fill: #4B0082; 
-                  -fx-padding: 10 0 20 0;
-                  -fx-effect: dropshadow(gaussian, rgba(75,0,130,0.2), 0, 3, 3, 0;">
-    </Label>
+       style="-fx-font-size: 40px;
+              -fx-font-weight: bold;
+              -fx-font-family: 'Segoe UI';
+              -fx-text-fill:rgb(14, 12, 12);
+              -fx-padding: 10 0 20 0;
+              -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 2, 2, 2, 0);">
+</Label>
+
 
     <!-- Imagen mucho más grande (300x300) -->
     <ImageView fx:id="pokemonImageView" fitHeight="300" fitWidth="300" preserveRatio="true"
