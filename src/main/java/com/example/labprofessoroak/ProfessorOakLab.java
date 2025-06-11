@@ -39,8 +39,8 @@ public class ProfessorOakLab extends Application {
         try {
             Image oakImage = new Image(getClass().getResourceAsStream("/com/example/labprofessoroak/Profesor.png"));
             oakImageView.setImage(oakImage);
-            oakImageView.setFitHeight(150); // Ajusta el tamaño según necesites
-            oakImageView.setFitWidth(150);
+            oakImageView.setFitHeight(450); // ACA ES EL TAMAÑO DE LA IMAGEN
+            oakImageView.setFitWidth(350);
         } catch (Exception e) {
             System.err.println("Error cargando la imagen: " + e.getMessage());
             // placeholder
@@ -106,8 +106,8 @@ public class ProfessorOakLab extends Application {
         try {
             Image oakImage = new Image(getClass().getResourceAsStream("/com/example/labprofessoroak/Profesor.png"));
             oakImageView.setImage(oakImage);
-            oakImageView.setFitHeight(150); // Ajusta  tamaño de la imagen
-            oakImageView.setFitWidth(150);
+            oakImageView.setFitHeight(450); // ACA ES EL TAMAÑO DE LA IMAGEN
+            oakImageView.setFitWidth(350);
         } catch (Exception e) {
             System.err.println("Error cargando la imagen: " + e.getMessage());
             // Fallback en caso de que la imagen no se cargue
