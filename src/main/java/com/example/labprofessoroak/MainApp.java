@@ -16,7 +16,7 @@ public class MainApp extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
+// Main ejecuta todo el programa
     public static void main(String[] args) {
         launch();
     }
