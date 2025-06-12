@@ -1,27 +1,27 @@
-# 🎮 Laboratorio del Profesor Oak
+#  Laboratorio del Profesor Oak
 
 ¡Bienvenido al Laboratorio del Profesor Oak! Esta aplicación te ayudará a encontrar tu Pokémon ideal basado en tus preferencias a través de un árbol de decisiones interactivo.
 
-## 🚀 Características
+##  Características
 
-- 🌳 Árbol de decisiones interactivo
-- 🎨 Interfaz gráfica moderna con estilos pastel
-- 🎯 Preguntas personalizadas para encontrar tu Pokémon ideal
-- 📊 Tarjeta detallada del Pokémon con:
+-  Árbol de decisiones interactivo
+-  Interfaz gráfica moderna con estilos pastel
+-  Preguntas personalizadas para encontrar tu Pokémon ideal
+-  Tarjeta detallada del Pokémon con:
   - Imagen oficial
   - Tipos
   - Habilidades
   - Peso y altura
-- 🔄 Opción para volver a empezar
-- 🌐 Integración con PokeAPI
+-  Opción para volver a empezar
+-  Integración con PokeAPI
 
-## 🛠️ Requisitos
+##  Requisitos
 
 - Java 21 o superior
 - JavaFX 21
 - Maven
 
-## 📥 Instalación
+##  Instalación
 
 1. Clona el repositorio:
 ```bash
@@ -78,10 +78,5 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## 👥 Autores
 
 - Pedro - [@PetusoTwo](https://github.com/PetusoTwo)
-- Añejandro - [@Alejosor](https://github.com/Alejosor)
+- Alejandro - [@Alejosor](https://github.com/Alejosor)
 
-## 🙏 Agradecimientos
-
-- [PokeAPI](https://pokeapi.co/) por proporcionar los datos de Pokémon
-- JavaFX por el framework de interfaz gráfica
-- La comunidad de Pokémon por la inspiración 
