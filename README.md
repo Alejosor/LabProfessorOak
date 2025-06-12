@@ -25,7 +25,7 @@
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/LabProfessorOak.git
+git clone https://github.com/Alejosor/LabProfessorOak.git
 cd LabProfessorOak
 ```
 
@@ -34,10 +34,7 @@ cd LabProfessorOak
 mvn clean package
 ```
 
-3. Ejecuta la aplicación:
-```bash
-java --module-path "ruta/a/javafx-sdk-21/lib" --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.base -jar target/LabProfessorOak-1.0-SNAPSHOT.jar
-```
+3. Ejecuta la aplicación.
 
 ## 🏗️ Estructura del Proyecto
 
@@ -65,7 +62,7 @@ LabProfessorOak/
 └── README.md
 ```
 
-## 🎯 Uso
+##  Uso
 
 1. Inicia la aplicación
 2. Responde las preguntas sobre tus preferencias
@@ -80,7 +77,8 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 👥 Autores
 
-- Tu Nombre - [@PetusoTwo](https://github.com/PetusoTwo)
+- Pedro - [@PetusoTwo](https://github.com/PetusoTwo)
+- Añejandro - [@Alejosor](https://github.com/Alejosor)
 
 ## 🙏 Agradecimientos
 
